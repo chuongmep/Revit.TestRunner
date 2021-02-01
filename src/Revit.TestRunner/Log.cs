@@ -21,10 +21,10 @@ namespace Revit.TestRunner
         private static ILog Logger => sLogger ?? ( sLogger = SetupLog() );
 
         public static string LogDirectory
-        {
+        {       
             get
             {
-                var appenders = Logger.Logger.Repository.GetAppenders();
+                var appenders = Logger.Logger.Repository.GetAppenders()                   ;
 
                 foreach( IAppender appender in appenders ) {
                     if( appender is RollingFileAppender fileAppender ) {
