@@ -34,7 +34,7 @@
                 <TextBox DockPanel.Dock="Left" Text="{Binding AssemblyPath}" IsReadOnly="True" />
             </DockPanel>
         </StackPanel>
-        
+
 
         <DockPanel DockPanel.Dock="Bottom" >
             <StackPanel>
@@ -45,8 +45,6 @@
                 <Button  Content="Run" Width="100" Command="{Binding DebugCommand}" ToolTip="Run Selected"/>
             </StackPanel>
         </DockPanel>
-
-
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="2*" />
